@@ -6,3 +6,12 @@
 
 - include: RedHat.yml
   when: ansible_os_family == 'RedHat'
+
+
+- name: Include Ubuntu/Debian OS specific vars
+  include_vars: "Debian.yml"
+  when: ansible_os_family == 'Debian'
+
+- include: Debian.yml
+  when: ansible_os_family == 'Debian'
+
