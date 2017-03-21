@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 
 - name: Include OS specific vars
   include_vars: "RedHat.yml"
@@ -15,3 +16,6 @@
 - include: Debian.yml
   when: ansible_os_family == 'Debian'
 
+=======
+# tasks file for robot-framework
+>>>>>>> 6b5553f4064e44d8d37b1832a933adf791453aa5
